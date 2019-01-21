@@ -90,6 +90,7 @@
   .stacked-menu__item-link_filter.stacked-menu__item-link_current .stacked-menu__item-counter,
   .post__time,
   .btn_blue,
+  .btn_outline_blue,
   .profile-section__user-hub,
   .defination-list__value,
   .dropdown-container_white .user-info__nickname,
@@ -158,7 +159,8 @@
   .btn_flow-toggle,
   .default-block__header-title,
   .dfp-slot__label,
-  .stacked-menu__item-counter {
+  .stacked-menu__item-counter,
+  .default-block__polling-title {
       color: var(--text-color-second, #979797);
   }
 
@@ -279,7 +281,6 @@
   .footer__link:hover,
   .comment__footer-link:hover,
   .comment-form__preview,
-  .btn_outline_blue,
   div.jGrowl div.jGrowl-notification,
   div.jGrowl div.jGrowl-closer,
   .comments-section__head-title,
@@ -332,6 +333,7 @@
   .n-dropdown-menu__item-link_flow,
   .nav-links__item-link:hover {
       color: var(--text-color-first, #dfdfdf);
+      font-size: 18px
   }
 
   .chosen-container-active .chosen-choices .search-field input[type=text],
@@ -419,7 +421,8 @@
   .dfp-slot,
   .layout__row_footer,
   #xpanel,
-  .profile-section__user-hub {
+  .profile-section__user-hub,
+  .h-popover {
       background-color: var(--bg-color-background, #373737);
       -webkit-transition: background-color var(--hover-timeout, 0.5s) ease;
       -moz-transition: background-color var(--hover-timeout, 0.5s) ease;
@@ -504,6 +507,7 @@
   tr,
   .h-info code,
   .btn_blue,
+  .btn_outline_blue,
   .toggle-menu__most-read,
   .toggle-menu_most-comments,
   .post-info__project-label_habr,
@@ -576,6 +580,9 @@
   }
 
 
+  .comment__head_new-comment {
+      background-color: var(--text-color-green, #42b72a)
+  }
 
   /*-------------------- borders color --------------------*/
   .hyrwcl .aygumfbe,
@@ -763,6 +770,11 @@
 
   .toggle-menu__item-link {
       border: 4px solid transparent;
+  }
+
+  .bookmark-btn_is-added .icon-svg_bookmark,
+  .icon_comment-bookmark_add {
+      color: var(--text-color-green, #42b72a)!important;
   }
 
   text[fill="#000000"] {
